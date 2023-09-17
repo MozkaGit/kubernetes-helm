@@ -1,0 +1,13 @@
+wordpressUsername: admin
+wordpressPassword: password
+service:
+  type: NodePort
+  nodePorts:
+    http: "32000"
+persistence:
+  enabled: false
+mariadb:
+  enabled: true
+  primary:
+    persistence:
+      enabled: false
